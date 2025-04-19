@@ -11,9 +11,10 @@ const JobDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const {id} = useParams();
+  const url = import.meta.env.VITE_API_URL;
   
   const fetchJobDetails = async () => {
-    await axios.get(`http://localhost:3001/api/jobs/${id.trim()}`)
+    await axios.get(`${url}/${id.trim()}`)
     .then((response)=>{
       console.log(response.data.job)
       setJob(response.data.job);

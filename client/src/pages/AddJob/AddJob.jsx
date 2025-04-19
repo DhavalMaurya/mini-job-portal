@@ -5,6 +5,7 @@ import "./AddJob.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { locations } from "../../data/data";
+const url = import.meta.env.VITE_API_URL;
 
 const AddJob = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ const AddJob = () => {
     try {
       await axios
         .post(
-          "http://localhost:3001/api/jobs/add-job ",
+          `${url}/add-job`,
           {
             ...formData,
             salary: formData.salary ? Number(formData.salary) : undefined,
@@ -56,7 +57,6 @@ const AddJob = () => {
           {
             headers: {
               "Content-Type": "application/json",
-              Authorization: "Bearer your-token-here", // optional
             },
           }
         )

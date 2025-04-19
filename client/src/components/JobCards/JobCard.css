@@ -1,0 +1,110 @@
+.job-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.job-type-badge {
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.job-type-badge.full-time {
+  background-color: #3b82f6;
+}
+
+.job-type-badge.part-time {
+  background-color: #10b981;
+}
+
+.job-type-badge.contract {
+  background-color: #f59e0b;
+}
+
+.job-type-badge.remote {
+  background-color: #8b5cf6;
+}
+
+.job-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.job-details strong {
+  color: #1f2937;
+}
+
+.apply-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+}
+
+.apply-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
+}
+
+.job-card-footer {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.job-card-footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.job-card-footer a:hover {
+  text-decoration: underline;
+}
+
+.job-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}

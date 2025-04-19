@@ -1,0 +1,176 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #2c3e50; /* Ensure default text color is dark */
+  }
+  
+  .container {
+    min-height: 100vh;
+    background-color: #f4f7fa;
+  }
+  
+  .main-header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50; /* Explicit dark color for logo */
+  }
+  
+  .filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    align-items: center;
+  }
+  
+  .filter-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+    background-color: #fff;
+    color: #2c3e50; /* Ensure text is dark */
+    cursor: pointer;
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%232c3e50" d="M6 9L2 5h8z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  .filter-select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  }
+  
+  .filter-select option {
+    color: #2c3e50; /* Ensure dropdown options are dark */
+  }
+  
+  .clear-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff; /* Explicit white text for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clear-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .add-button {
+    padding: 10px 20px;
+    background-color: #0a3552;
+    color: #ffffff; /* Explicit white text for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-button:hover {
+    background-color: #165178;
+  }
+  
+  .clear-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .no-jobs {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d; /* Medium gray for no-jobs message */
+    padding: 40px 0;
+  }
+  
+  /* Ensure JobCard text is visible (assuming JobCard has its own styles) */
+  .jobs-grid * {
+    color: #2c3e50; /* Default dark color for all elements in jobs grid */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .main-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .filters {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .filter-select {
+      width: 100%;
+    }
+  
+    .clear-button {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    .jobs-grid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 24px;
+    }
+  
+    .filter-select {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .clear-button {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .no-jobs {
+      font-size: 16px;
+      padding: 30px 0;
+    }
+  }

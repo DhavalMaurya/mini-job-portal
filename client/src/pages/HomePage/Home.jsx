@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { jobTypes, locations, technologies } from "../../data/data";
 
+const url = import.meta.env.VITE_API_URL;
 const Home = () => {
   const [jobs, setJobs] = useState([]);
   const [filters, setFilters] = useState({
@@ -16,7 +17,7 @@ const Home = () => {
 
   const fetchJobs = async () => {
     await axios
-      .get("http://localhost:3001/api/jobs/all-jobs", {})
+      .get(`${url}/all-jobs`, {})
       .then((response) => {
         console.log(response);
         setJobs(response.data.jobs);

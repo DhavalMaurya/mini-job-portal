@@ -18,7 +18,7 @@ const JobCard = ({ job }) => {
           {job.experience && <p><strong>Experience:</strong> {job.experience}</p>}
           {job.technology && <p><strong>Technology:</strong> {job.technology.join(', ')}</p>}
         </div>
-        <button className="apply-button">Apply Now</button>
+        {/* <button className="apply-button">Apply Now</button> */}
       </Link>
       <div className="job-card-footer">
         <Link to={`/job-details/${job._id}`}>View Details</Link>

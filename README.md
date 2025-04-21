@@ -2,13 +2,14 @@
 
 A full-stack job portal application built with the **MERN stack** (MongoDB, Express, React, Node.js). This app allows users to browse job listings and employers to post jobs, featuring a responsive UI and a RESTful API.
 
+
 ## 🚀 Features
 
-- Job listing and detailed job views  
-- Add and manage job postings  
-- Responsive and clean UI  
-- RESTful API with MongoDB database integration
-
+- Add new job listings  
+- Filter jobs by location, job type, and technology  
+- View detailed job information  
+- Responsive and clean user interface  
+- RESTful API with MongoDB integration
 ---
 
 ## 🛠 Project Setup

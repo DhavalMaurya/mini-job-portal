@@ -16,7 +16,7 @@ A full-stack job portal application built with the **MERN stack** (MongoDB, Expr
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mini-job-portal.git
+git clone https://github.com/DhavalMaurya/mini-job-portal.git
 cd mini-job-portal
 ```
 

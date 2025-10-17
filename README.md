@@ -2,6 +2,11 @@
 
 A full-stack job portal application built with the **MERN stack** (MongoDB, Express, React, Node.js). This app allows users to browse job listings and employers to post jobs, featuring a responsive UI and a RESTful API.
 
+## 🌐 Live Demo
+
+You can view the live project here: **[https://mini-job-portal-wtu3.onrender.com](https://mini-job-portal-wtu3.onrender.com)**
+
+---
 
 ## 🚀 Features
 

@@ -31,8 +31,12 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something went wrong!', error: err.message });
 });
 
+app.get("/health", (req, res) => {
+    res.status(200).json({ status: "ok", message: "API is alive!" });
+});
 
 const PORT = process.env.PORT || 5000;
+
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
